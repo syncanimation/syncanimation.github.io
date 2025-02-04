@@ -168,6 +168,15 @@
 
       <!-- h3 左对齐，并且去除左右内边距 -->
       <h3 class="title is-4" style="text-align: left; margin: 0; padding: 20px 0px;">Comparison with Gan</h3>
+        <!-- We compare with 四个 one-shot methods在: Wav2Lip, DINet (CVPR 2023),IP-LAP and EDTalk. 我们的SyncAnimation实现了动态且清晰的唇型，以及唇音一致性
+          --> 
+        <h4 class="text-align: justify" style="width: 100%; text-align: justify; margin-top: 5px;">
+          We compare with four one-shot methods: <a href="https://dl.acm.org/doi/abs/10.1145/3394171.3413532" target="_blank">Wav2Lip</a> (ACM MM 2020), 
+          <a href="https://ojs.aaai.org/index.php/AAAI/article/view/25464" target="_blank">DINet</a> (AAAI 2023), 
+          <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Zhong_Identity-Preserving_Talking_Face_Generation_With_Landmark_and_Appearance_Priors_CVPR_2023_paper.html">IP-LAP</a> (CVPR 2023), 
+          and <a href="https://link.springer.com/chapter/10.1007/978-3-031-72658-3_23" target="_blank">EDTalk</a> (ECCV 2024). Our SyncAnimation achieves dynamic and clear lip shapes, as well as lip-audio consistency.
+        
+        </h4>
         <video id="teaser" controls playsinline height="100%">
           <source src="./static/videos/May_gan_vs_ours_with_bottom_border_and_title.mp4" type="video/mp4">
         </video>
@@ -180,7 +189,13 @@
         <video id="teaser" controls playsinline height="100%">
           <source src="./static/videos/ChrisMurphy1_gan_vs_ours_with_bottom_border_and_title.mp4" type="video/mp4">
         </video>
+      
       <h3 class="title is-4" style="text-align: left; margin: 0; padding: 20px 0px;">Comparison with Nerf</h3>
+          <!-- We compare with 三个 one-shot methods在: ER-NeRF, SyncTalk (CVPR 2023) and GeneFace++ 。只有我们的SyncAnimation实现强语音相关性的avatar姿势和表情
+          --> 
+
+
+        
         <video id="teaser" controls playsinline height="100%">
           <source src="./static/videos/May_nerf_vs_ours_with_bottom_border_and_title.mp4" type="video/mp4">
         </video>
@@ -193,7 +208,11 @@
         <video id="teaser" controls playsinline height="100%">
           <source src="./static/videos/ChrisMurphy1_nerf_vs_ours_with_bottom_border_and_title.mp4" type="video/mp4">
         </video>
+      
       <h3 class="title is-4" style="text-align: left; margin: 0; padding: 20px 0px;">Comparison with Stable Diffusion</h3>
+        <!-- We compare with 三个 one-shot methods: Hallo, V-Express (CVPR 2023) and EchoMimic 。我们的SyncAnimation实现逼真的avatar，
+             拥有更多的面部细节，和更丰富的姿势和表情
+          --> 
         <video id="teaser" controls playsinline height="100%">
           <source src="./static/videos/May_sd_vs_ours_with_bottom_border_and_title.mp4" type="video/mp4">
         </video>
