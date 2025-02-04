@@ -274,6 +274,23 @@
     <div class="hero-body">
       <!-- h2 居中对齐 -->
       <h2 class="title is-3" style="font-size: 2.1em; font-weight: bold; margin-bottom: 20px; text-align: center;">Live News</h2>
+        <!-- 在新闻报道或电视广播中，两个记者或被采访人通常会以对谈或讨论的方式进行交互，在对方进行说话时，己方需要保持短暂的“静止”，反之亦然。
+          实现这一过程不仅需要avatar具有更大的upper-body 渲染，因为人物通常不会只以头的形式出现，也需要avatar的姿态和表情与音频高度相关，
+          因为“静止”时段需要对移动和表情进行限制。我们从两段新闻对话中，分别提取了男声和女声，结合ours SyncAnimation渲染生成了4个具有
+          upper-body的avatars with strong audio relation。视频中展示了所渲染的avatar能够很好的完成这一对话/采访能力，
+          证明ours SyncAnimation所具有的优秀的音频驱动姿态和面部表情能力和更大的躯干渲染能力。 -->
+        <h3 class="text-align: justify" style="width: 100%; text-align: justify; margin-bottom: 5px;">
+            In news reporting or television broadcasts, two journalists or interviewees typically engage in interaction 
+            through dialogue or discussion, where one party remains momentarily "still" while the other speaks, and vice versa. 
+            However, achieving this requires not only rendering a larger upper body for the avatar, as individuals are often not represented solely by their heads, 
+            but also ensuring that the avatar's poses and expressions are highly correlated with the audio, 
+            since "still" periods require constraining both movement and expression.
+            From two segments of different news dialogues, we extracted the male and female audio tracks and used our SyncAnimation method to render four avatars with upper bodies and strong audio correlation. 
+            The first row displays avatars rendered by SyncAnimation, while the second row shows the actual dialogue or discussion.
+            The videos demonstrate how the rendered avatars successfully perform the dialogue/interview task, 
+            proving the excellent audio-driven pose and facial expression capabilities of our SyncAnimation, along with its ability to render upper body.
+        </h3>
+        
         <div style="display: flex; justify-content: space-between; gap: 10px; max-width: 100%; margin: 0 auto; box-sizing: border-box;">
           <video id="teaser1" controls playsinline style="height: 50%; width: 48%; max-width: 48%;">
             <source src="./static/videos/5-DebFischer0+RonWyden1-com.mp4" type="video/mp4">
