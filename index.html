@@ -170,7 +170,7 @@
       <h3 class="title is-4" style="text-align: left; margin: 0; padding: 20px 0px;">Comparison with Gan</h3>
         <!-- We compare with 四个 one-shot methods在: Wav2Lip, DINet (CVPR 2023),IP-LAP and EDTalk. 我们的SyncAnimation实现了动态且清晰的唇型，以及唇音一致性
           --> 
-        <h4 class="text-align: justify" style="width: 100%; text-align: justify; margin-top: 5px; margin-bottom: 5px;">
+        <h4 class="text-align: justify" style="width: 100%; text-align: justify; margin-bottom: 5px;">
           We compare with four one-shot methods: <a href="https://dl.acm.org/doi/abs/10.1145/3394171.3413532" target="_blank">Wav2Lip</a> (ACM MM 2020), 
           <a href="https://ojs.aaai.org/index.php/AAAI/article/view/25464" target="_blank">DINet</a> (AAAI 2023), 
           <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Zhong_Identity-Preserving_Talking_Face_Generation_With_Landmark_and_Appearance_Priors_CVPR_2023_paper.html">IP-LAP</a> (CVPR 2023), 
@@ -193,7 +193,7 @@
       <h3 class="title is-4" style="text-align: left; margin: 0; padding: 20px 0px;">Comparison with Nerf</h3>
           <!-- We compare with 三个 one-shot methods在: ER-NeRF, SyncTalk (CVPR 2023) and GeneFace++ 。我们的SyncAnimation实现了具有强语音相关性的avatar姿势和表情
           --> 
-        <h4 class="text-align: justify" style="width: 100%; text-align: justify; margin-top: 5px; margin-bottom: 5px;">
+        <h4 class="text-align: justify" style="width: 100%; text-align: justify; margin-bottom: 5px;">
           We compare with three one-shot methods: <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Li_Efficient_Region-Aware_Neural_Radiance_Fields_for_High-Fidelity_Talking_Portrait_Synthesis_ICCV_2023_paper.html?ref=https://githubhelp.com" target="_blank">ER-NeRF</a> (ICCV 2023), 
           <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Peng_SyncTalk_The_Devil_is_in_the_Synchronization_for_Talking_Head_CVPR_2024_paper.html" target="_blank">SyncTalk</a> (CVPR 2024),  
           and <a href="https://arxiv.org/abs/2305.00787" target="_blank">GeneFace++</a> (arXiv 2023). SyncAnimation is the only method that successfully achieves avatar poses and expressions with strong audio correlation.
@@ -215,7 +215,7 @@
         <!-- We compare with 三个 one-shot methods: Hallo, V-Express (CVPR 2023) and EchoMimic 。我们的SyncAnimation实现逼真的avatar，
              拥有更多的面部细节，和更丰富的姿势和表情
           --> 
-        <h4 class="text-align: justify" style="width: 100%; text-align: justify; margin-top: 5px; margin-bottom: 5px;">
+        <h4 class="text-align: justify" style="width: 100%; text-align: justify; margin-bottom: 5px;">
           We compare with three one-shot methods: <a href="https://arxiv.org/abs/2406.08801" target="_blank">Hallo</a> (arXiv 2024), 
           <a href="https://arxiv.org/abs/2406.02511" target="_blank">V-Express</a> (arXiv 2024),  
           and <a href="https://arxiv.org/abs/2407.08136" target="_blank">EchoMimic</a> (arxiv 2024). Our SyncAnimation generates realistic avatars with more facial details and richer poses and expressions.
@@ -242,6 +242,12 @@
     <div class="hero-body">
       <!-- h2 居中对齐 -->
       <h2 class="title is-3" style="font-size: 2.1em; font-weight: bold; margin-bottom: 20px; text-align: center;">Torso Scaling Expansion</h2>
+
+      <h3 class="text-align: justify" style="width: 100%; text-align: justify; margin-bottom: 5px;">
+        We deviate from the conventional approach of restricting upper-body scale and reject the practice of pasting back to the original frame. 
+        Our method, SyncAnimation, directly renders four upper-body avatars driven by four audio segments, ensuring strong audio correlation and natural, unrestricted poses and facial expressions.
+      </h3>
+      
       <div style="display: flex; justify-content: space-between; gap: 5px; max-width: 100%; margin: 0 auto; box-sizing: border-box;">
           <video id="teaser1" controls playsinline style="height: 50%; width: 48%; max-width: 48%;">
             <source src="./static/videos/3-DebFischer0+May.mp4" type="video/mp4">
