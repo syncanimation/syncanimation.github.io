@@ -122,7 +122,7 @@
 <section class="abstract">
   <div class="container is-max-desktop">
     <div class="abstract">
-      <h1 class="has-text-centered" style="font-size: 2.5em; font-weight: bold; margin-bottom: 20px;">Abstract</h1>
+      <h1 class="title is-3" style="font-size: 2.5em; font-weight: bold; margin-bottom: 20px;">Abstract</h1>
       <div style="text-align: justify;">
         <p>Generating talking avatars driven by audio remains a significant challenge. Existing methods typically require high computational costs and often lack sufficient facial detail and realism, making them unsuitable for applications that demand high real-time performance and visual quality. Additionally, while some methods can synchronize lip movement, they still face issues with consistency between facial expressions and upper body movement, particularly during silent periods.</p>
         
@@ -145,15 +145,19 @@
   </div>
 </section>
 
-@@ -136,7 +136,7 @@ <h2 class="subtitle has-text-centered" style="width: 100%; text-align: center; m
-    <!-- Paper Framework. -->
-      <h2 class="title is-3" style="text-align: center;">Framework</h2>
-      <div class="Framework">
-        <img src="./static/images/pipline2.png" alt="Audiodynamic Image" style="width: 100%; height: auto;">
-        <img src="./static/images/pipline.png" alt="Audiodynamic Image" style="width: 100%; height: auto;">
-      </div>
-    <!--/ Paper Framework. -->
+<section class="Framework">
+  <div class="container is-max-desktop">
+    <div class="Framework">
+      <h1 class="title is-3" style="font-size: 2.5em; font-weight: bold; margin-bottom: 20px;">Framework</h1>
+      <img src="./static/images/pipline2.png" alt="Audiodynamic Image" style="width: 100%; height: auto;">
+      <img src="./static/images/pipline.png" alt="Audiodynamic Image" style="width: 100%; height: auto;">
+      <h2 class="subtitle has-text-centered" style="width: 100%; text-align: justify; margin-top: 10px;"> 
+        SyncAnimation Framework: Given an image and audio, the preprocessing extracts 3DMM parameters for Audio2Pose and Audio2Emotion as references (or noise). 
+        It then generates the upper body, head, and lip refinement, ensuring pose consistency and facial expression alignment with the audio.
+      </h2>
+    </div>
   </div>
+</section>
 
 
 
