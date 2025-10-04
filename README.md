@@ -15,11 +15,12 @@
 - 在高分辨率视频中恢复头发等细节  
 -->
 
-## 🛠 安装与依赖  
+
+## 🛠 Installation & Dependencies
 
 ### Linux / Ubuntu  
 
-以下为在 Ubuntu 上的推荐安装流程（已知在 Ubuntu 18.04 + PyTorch 1.12.1 + CUDA 11.3 下进行测试）：
+Below is the recommended installation process on Ubuntu (tested on Ubuntu 20.04 with PyTorch 1.12.1 + CUDA 11.3):
 
 ```bash
 git clone https://github.com/ZiqiaoPeng/SyncTalk.git
