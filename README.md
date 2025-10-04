@@ -1,24 +1,10 @@
-# SyncTalk: The Devil is in the Synchronization for Talking Head Synthesis  
+# SyncAnimation: A Real-Time End-to-End Framework for Audio-Driven Human Pose and Talking Head Animation 
 
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)  
-[Project Page](https://ziqiaopeng.github.io/synctalk/) | [Paper (arXiv)](https://arxiv.org/abs/…) | [Demo Video](https://…)  
+[Project Page]([https://ziqiaopeng.github.io/synctalk/](https://syncanimation.github.io/)) | [Paper (arXiv)](https://arxiv.org/abs/2501.14646) | [Demo Video](https://syncanimation.github.io/)  
 
-> “SyncTalk synthesizes synchronized talking head videos, employing tri-plane hash representations to maintain subject identity. It can generate synchronized lip movements, facial expressions, and stable head poses, and restores hair details to create high-resolution videos.”  
+> “Generating talking avatar driven by audio remains a significant challenge. Existing methods typically require high computational costs and often lack sufficient facial detail and realism, making them unsuitable for applications that demand high real-time performance and visual quality. Additionally, while some methods can synchronize lip movement, they still face issues with consistency between facial expressions and upper body movement, particularly during silent periods. In this paper, we introduce SyncAnimation, the first NeRF-based method that achieves audio-driven, stable, and real-time generation of speaking avatar by combining generalized audio-to-pose matching and audio-to-expression synchronization. By integrating AudioPose Syncer and AudioEmotion Syncer, SyncAnimation achieves high-precision poses and expression generation, progressively producing audio-synchronized upper body, head, and lip shapes. Furthermore, the High-Synchronization Human Renderer ensures seamless integration of the head and upper body, and achieves audio-sync lip.”  
 
----
-
-## 📢 最新动态  
-
-- 2023‑11‑30：更新 arXiv 版本  
-- 2024‑03‑04：开源代码 + 预训练模型发布  
-- 2024‑03‑22：发布 Google Colab 演示  
-- 2024‑04‑14：新增 Windows 支持  
-- 2024‑04‑28：发布预处理代码  
-- 2024‑04‑29：修复音频编码器、blendshape 捕捉、面部追踪等 bug  
-- 2024‑05‑24：加入躯干训练以修复双下巴问题  
-- 2025‑06‑25：更新 **SyncTalk_2D** 模块  
-
----
 
 ## 🧠 简介  
 
@@ -30,30 +16,6 @@
 
 我们还提供了一个轻量快速版本 **SyncTalk_2D**，在速度与质量之间取得折中。
 
----
-
-## 🏗️ 仓库结构  
-
-```text
-.
-├── assets/                # 图片 / 演示资源
-├── data/                  # 示例数据 / 输入视频 / 处理后数据
-├── data_utils/            # 数据预处理、特征提取、面部追踪等模块  
-├── demo/                  # 演示脚本 / 示例  
-├── freqencoder/            # 频率编码模块  
-├── gridencoder/            # 网格编码模块  
-├── model/                 # 模型定义  
-├── nerf_triplane/         # Tri-plane 相关模型  
-├── raymarching/            # raymarching 实现  
-├── scripts/               # 辅助脚本（训练 / 安装 / 工具）  
-├── shencoder/              # spherical harmonics 编码模块  
-├── LICENSE  
-├── README.md  
-├── main.py  
-└── requirements.txt  
-```
-
----
 
 ## 🛠 安装与依赖  
 
